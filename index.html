@@ -1,121 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phericia & Caleb</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #6b2f8f 0%, #a24fb0 40%, #d97fc0 70%, #f4b6d2 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Cormorant Garamond', serif;
-      color: #fff;
-      padding: 1rem 1rem;
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-    }
-
-    .carousel {
-      position: relative;
-      width: min(90vw, 700px);
-      aspect-ratio: 4 / 3;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .carousel img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      opacity: 0;
-      transition: opacity 1.2s ease-in-out;
-    }
-
-    .carousel img.active {
-      opacity: 1;
-    }
-
-    h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: clamp(2rem, 12vw, 5rem);
-      font-weight: 400;
-      white-space: nowrap;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-    }
-
-    h2 {
-      margin-top: 0.5rem;
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 500;
-      font-size: clamp(0.85rem, 4vw, 1.5rem);
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      color: #fdf5fa;
-      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-    }
-
-    .message {
-      margin-top: 1.25rem;
-      margin-inline: auto;
-      max-width: 40ch;
-      font-family: 'Great Vibes', cursive;
-      font-size: clamp(1.1rem, 3.5vw, 1.75rem);
-      line-height: 1.4;
-      color: #fdf5fa;
-      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytonology</title>
+    <link rel="stylesheet" href="styles/content.css">
+    <style>
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            margin: 0 0 10px 0;
+            background: linear-gradient(135deg, #ffffff 30%, #a855f7 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 20px rgba(147, 51, 234, 0.2);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Phericia &amp; Caleb</h1>
-    <h2>September 7, 2018</h2>
-    <p class="message">Thank you for your endless love, and for being the most incredible wife and mother. I feel so lucky to share this beautiful life with you.</p>
-  </header>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>PAYTONOLOGY</h1>
+            <p class="subtitle">Mobile Apps by Caleb Payton</p>
+        </header>
 
-  <div class="carousel">
-    <img src="temp_images/IMG_0651.JPG" alt="" class="active">
-    <img src="temp_images/1752DCE6-13A8-48B4-A440-FA15CE07C245.JPG" alt="">
-    <img src="temp_images/E528FE6A-91FB-4FA6-AD85-1005EEDB4BF4.jpg" alt="">
-    <img src="temp_images/ACS_0915.jpg" alt="">
-    <img src="temp_images/FullSizeRender.jpg" alt="">
-    <img src="temp_images/FullSizeRender(1).jpg" alt="">
-    <img src="temp_images/FullSizeRender(2).jpg" alt="">
-    <img src="temp_images/IMG_1034.jpg" alt="">
-    <img src="temp_images/IMG_1045.jpg" alt="">
-    <img src="temp_images/IMG_2444.jpg" alt="">
-    <img src="temp_images/IMG_3247.jpg" alt="">
-    <img src="temp_images/IMG_3367.jpg" alt="">
-    <img src="temp_images/IMG_4134.jpg" alt="">
-  </div>
+        <!-- Apps Portfolio Section -->
+        <main class="apps-list">
 
-  <script>
-    const slides = document.querySelectorAll('.carousel img');
-    let current = 0;
-    setInterval(() => {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }, 4000);
-  </script>
+            <!-- App Item 1 -->
+            <div class="app-card">
+                <img src="assets/odaat-icon.png" alt="One Day at a Time Icon" class="app-icon" onerror="this.style.backgroundColor='#3b82f6'">
+                <div class="app-info">
+                    <h2 class="app-title">One Day at a Time</h2>
+                    <p class="app-description">Recovery happens one day at a time. Reflect, take inventory, and keep moving forward with One Day at a Time, the app.</p>
+                    <a href="privacy/odaat.html" class="privacy-link">Privacy Policy →</a>
+                </div>
+            </div>
+
+            <!-- App Item 2 -->
+            <div class="app-card">
+                <img src="assets/a-little-quiet-icon.png" alt="A Little Quiet Icon" class="app-icon" onerror="this.style.backgroundColor='#3b82f6'">
+                <div class="app-info">
+                    <h2 class="app-title">A Little Quiet</h2>
+                    <p class="app-description">Life moves fast. Take a moment to sit, meditate, and reflect on your day.</p>
+                    <a href="privacy/a-little-quiet.html" class="privacy-link">Privacy Policy →</a>
+                </div>
+            </div>
+
+        </main>
+    </div>
 </body>
 </html>
