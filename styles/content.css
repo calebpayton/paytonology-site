@@ -28,12 +28,22 @@ header {
     margin-bottom: 50px;
 }
 
+.brand-logo {
+    width: min(100%, 420px);
+    margin: 0 auto 10px;
+}
+
+.brand-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* --- 3. Typography --- */
 .subtitle {
     color: #94a3b8;
     font-size: 1rem;
     letter-spacing: 0.05em;
-    text-transform: uppercase;
     margin: 0;
 }
 
@@ -117,5 +127,4 @@ header {
         align-items: center;
         padding: 20px;
     }
-    h1 { font-size: 2rem; }
 }
