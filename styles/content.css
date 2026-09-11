@@ -119,6 +119,27 @@ header {
     text-decoration: underline;
 }
 
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s ease;
+    margin-top: 20px;
+}
+
+.contact-link:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
 /* --- Responsive Design for Smaller Mobile Screens --- */
 @media (max-width: 600px) {
     .app-card {
